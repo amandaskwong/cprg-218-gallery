@@ -79,6 +79,37 @@ footer {
     padding: 1em;
 }
 
-@media screen and (max-width: 1000px) {
-    
+@media screen and (max-width: 1001px) {
+    main div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    nav {
+        background-color: transparent;
+        max-width: 95%;
+        margin: auto;
+    }
+   
+    nav ul li {
+        display: grid;
+        row-gap: 1rem;
+        border: #97bf04 1px solid;
+        margin: 1rem 0;
+        padding: 1rem;
+        background-color: #d9043d;
+    }
+
+    main div {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    figure:last-of-type {
+        grid-column: span 1;
+    }
 }
